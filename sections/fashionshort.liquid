@@ -1,6 +1,320 @@
+{{ 'fashionshort.css' | asset_url | stylesheet_tag }}
+
+
+<div class="fashionshort">
+  <div class="heroheader">
+    <header class="header">
+      <div class="announcement">
+        <div class="details-1 container-xs">
+          <p class="offer ui text size-xs">
+            <span class="offer-span">
+              {{ 'sections.fashionshort.offerspan' | t }}</span>
+            <span class="offer-span-1">
+              {{ 'sections.fashionshort.offerspan1' | t }}</span>
+          </p>
+          <a href="#">
+            {% render 'img_icon', class: "icon_one" %}
+          </a>
+        </div>
+      </div>
+      <div class="header-1">
+        <div class="details-1 container-xs">
+          {% if section.settings.headerlogo_one == blank %}
+            {% render 'img_header_logo', class: "headerlogo_one" %}
+          {% else %}
+            <img
+              src="{{section.settings.headerlogo_one | image_url}}"
+              alt="headerlogo"
+              width="126"
+              height="32"
+              loading="lazy"
+              class="headerlogo_one" />
+          {% endif %}
+          <ul class="rowhome">
+            <li>
+              <a href="#">
+                <p class="home ui heading size-xs">
+                  {{ section.settings.home }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.shop }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.women }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.men }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.accessories }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.aboutus }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.contactus }}</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="shop ui heading size-xs">
+                  {{ section.settings.blog }}</p>
+              </a>
+            </li>
+          </ul>
+          <div class="rowsearch_one">
+            <a href="#">
+              {% render 'img_search', class: "search_one" %}
+            </a>
+            <a href="#">
+              {% render 'img_favorite', class: "search_one" %}
+            </a>
+            <a href="#">
+              {% render 'img_bag', class: "search_one" %}
+            </a>
+            <a href="#">
+              {% render 'img_lock', class: "search_one" %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="herosection">
+      <div class="details">
+        <button class="flex-row-center-center enjoy_50off_in">
+          {% render 'img_icon_blue_gray_900', class: "icon" %}
+          <span>
+            {{ 'sections.fashionshort.msg_enjoy_50_off_in' | t }}</span>
+        </button>
+        <h1 class="stepinto ui heading size-lg">
+          {{ section.settings.stepinto }}</h1>
+        <p class="description ui text size-s">
+          {{ section.settings.description }}</p>
+        <button class="flex-row-center-center shop_now">
+          <span>
+            {{ 'sections.fashionshort.lbl_shop_now' | t }}</span>
+          {% render 'img_frame', class: "frame" %}
+        </button>
+      </div>
+      <img
+        src="{% if section.settings.closeupportra == blank %} {{ 'img_close_up_portra.png' | file_url }} {% else %}{{ section.settings.closeupportra | image_url}}{% endif %}"
+        alt="closeupportra"
+        width="521"
+        height="637"
+        loading="lazy"
+        class="closeupportra" />
+    </div>
+  </div>
+  <div class="columnfree container-xs">
+    <div class="partners">
+      {%- for block in section.blocks -%}
+        <div {{ block.shopify_attributes }} class="freeshipping">
+          {% if block.settings.free_shipping == blank %}
+            {% render 'img_thumbs_up', class: "free_shipping" %}
+          {% else %}
+            <img
+              src="{{block.settings.free_shipping | image_url}}"
+              alt="free_shipping"
+              width="54"
+              height="54"
+              loading="lazy"
+              class="free_shipping" />
+          {% endif %}
+          <div class="columnfreeshipp">
+            <h2 class="freeshipping-1 ui heading size-s">
+              {{ block.settings.freeshipping }}</h2>
+            <p class="price ui text size-xs">
+              {{ block.settings.price }}</p>
+          </div>
+        </div>
+
+      {%- endfor -%}
+    </div>
+    <div class="listwomen_one">
+      {%- for block in section.blocks -%}
+        <div {{ block.shopify_attributes }} class="stackwomen_one">
+          <img
+            src="{% if block.settings.women_one == blank %} {{ 'img_rectangle_145.png' | file_url }} {% else %}{{ block.settings.women_one | image_url}}{% endif %}"
+            alt="women"
+            width="369"
+            height="485"
+            loading="lazy"
+            class="women_one" />
+          <h2 class="women_two ui heading size-md">
+            {{ block.settings.women_two }}</h2>
+        </div>
+
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "t:sections.fashionshort.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "closeupportra",
+        "label": "t:sections.fashionshort.settings.closeupportra"
+      },
+      {
+        "type": "text",
+        "id": "stepinto",
+        "label": "t:sections.fashionshort.settings.stepinto",
+        "default": "Step into Fashion at Your <br />Ultimate Style Destination!"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "t:sections.fashionshort.settings.description",
+        "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+      },
+      {
+        "type": "text",
+        "id": "offer",
+        "label": "t:sections.fashionshort.settings.offer",
+        "default": "Sign up now and enjoy a 25% discount on your first order. Don&#39;t miss out! Sign up now"
+      },
+      {
+        "type": "image_picker",
+        "id": "headerlogo_one",
+        "label": "t:sections.fashionshort.settings.headerlogo_one"
+      },
+      {
+        "type": "text",
+        "id": "home",
+        "label": "t:sections.fashionshort.settings.home",
+        "default": "Home"
+      },
+      {
+        "type": "text",
+        "id": "shop",
+        "label": "t:sections.fashionshort.settings.shop",
+        "default": "Shop"
+      },
+      {
+        "type": "text",
+        "id": "women",
+        "label": "t:sections.fashionshort.settings.women",
+        "default": "Women"
+      },
+      {
+        "type": "text",
+        "id": "men",
+        "label": "t:sections.fashionshort.settings.men",
+        "default": "Men"
+      },
+      {
+        "type": "text",
+        "id": "accessories",
+        "label": "t:sections.fashionshort.settings.accessories",
+        "default": "Accessories"
+      },
+      {
+        "type": "text",
+        "id": "aboutus",
+        "label": "t:sections.fashionshort.settings.aboutus",
+        "default": "About Us"
+      },
+      {
+        "type": "text",
+        "id": "contactus",
+        "label": "t:sections.fashionshort.settings.contactus",
+        "default": "Contact Us"
+      },
+      {
+        "type": "text",
+        "id": "blog",
+        "label": "t:sections.fashionshort.settings.blog",
+        "default": "Blog"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.fashionshort.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "free_shipping",
+            "label": "t:sections.fashionshort.blocks.column.settings.free_shipping"
+          },
+          {
+            "type": "text",
+            "id": "freeshipping",
+            "label": "t:sections.fashionshort.blocks.column.settings.freeshipping",
+            "default": "Free Shipping"
+          },
+          {
+            "type": "text",
+            "id": "price",
+            "label": "t:sections.fashionshort.blocks.column.settings.price",
+            "default": "Free Shipping for order above $180"
+          },
+          {
+            "type": "image_picker",
+            "id": "women_one",
+            "label": "t:sections.fashionshort.blocks.column.settings.women_one"
+          },
+          {
+            "type": "text",
+            "id": "women_two",
+            "label": "t:sections.fashionshort.blocks.column.settings.women_two",
+            "default": "WOMEN"
+          }
+        ]
+      },
+      {
+        "type": "column",
+        "name": "t:sections.fashionshort.blocks.column.name",
+        "settings": []
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.fashionshort.presets.name",
+        "blocks": [
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
