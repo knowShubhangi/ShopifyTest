@@ -376,18 +376,6 @@
       "presets": {
         "name": "Fashionshort"
       },
-      "blocks": {
-        "column": {
-          "name": "listwomen_one",
-          "settings": {
-            "free_shipping": "free_shipping",
-            "freeshipping": "freeshipping",
-            "price": "price",
-            "women_one": "women_one",
-            "women_two": "women_two"
-          }
-        }
-      },
       "settings": {
         "closeupportra": "closeupportra",
         "stepinto": "stepinto",
