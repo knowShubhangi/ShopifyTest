@@ -1,15 +1,8 @@
 {
-    "sections": {
-      "fashionshort": {
-        "type": "fashionshort",
-        "blocks": {
-          "column1": { "type": "column", "settings": { "womentwo": "WOMEN" } },
-          "column2": { "type": "column", "settings": { "womentwo": "MEN" } },
-          "column3": { "type": "column", "settings": { "womentwo": "KIDS" } }
-        },
-        "block_order": ["column1", "column2", "column3", "column1", "column2", "column3"]
-      }
-    },
-    "order": ["fashionshort"]
-  }
-  
+  "sections": {
+    "fashionshort": {
+      "type": "fashionshort"
+    }
+  },
+  "order": ["fashionshort"]
+}

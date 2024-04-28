@@ -36,10 +36,17 @@ ul {
   width: 126px;
 }
 
+.shop-link {
+  cursor: pointer;
+}
+
 .shop {
   color: #777c84 !important;
   font-size: 14px;
   font-weight: 600;
+  &:hover {
+    color: #1b2834 !important;
+  }
 }
 
 .search_one {
@@ -47,32 +54,17 @@ ul {
   width: 24px;
 }
 
-.free_shipping {
-  height: 54px;
-  width: 54px;
-}
-
 .fashionshort {
-  padding-bottom: 88px;
-  gap: 90px;
+  padding-bottom: 100px;
   background-color: #ffffff;
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
   @media only screen and (max-width: 1050px) {
-    gap: 67px;
     padding-bottom: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    gap: 45px;
   }
 }
 
 .heroheader {
   background-color: #f5f8fa;
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -237,97 +229,6 @@ ul {
   object-fit: cover;
   @media only screen and (max-width: 1050px) {
     width: 100%;
-  }
-}
-
-.columnfree {
-  gap: 90px;
-  display: flex;
-  flex-direction: column;
-  @media only screen and (max-width: 1050px) {
-    gap: 67px;
-    padding: 20px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    gap: 45px;
-  }
-}
-
-.partners {
-  gap: 134px;
-  display: flex;
-  @media only screen and (max-width: 1050px) {
-    flex-direction: column;
-  }
-}
-
-.freeshipping {
-  gap: 16px;
-  display: flex;
-  flex: 1;
-}
-
-.columnfreeshipp {
-  gap: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.freeshipping-1 {
-  color: #1b2834 !important;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.price {
-  color: #777c84 !important;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.listwomen_one {
-  gap: 48px;
-  display: flex;
-  @media only screen and (max-width: 1050px) {
-    flex-direction: column;
-  }
-}
-
-.stackwomen_one {
-  height: 485px;
-  width: 100%;
-  position: relative;
-  @media only screen and (max-width: 1050px) {
-    height: auto;
-  }
-}
-
-.women_one {
-  height: 485px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.women_two {
-  color: #ffffff !important;
-  letter-spacing: 15px;
-  font-size: 30px;
-  font-weight: 800;
-  position: absolute;
-  bottom: 9%;
-  right: 0px;
-  left: 0px;
-  width: max-content;
-  margin: auto;
-  @media only screen and (max-width: 1050px) {
-    font-size: 28px;
-  }
-
-  @media only screen and (max-width: 550px) {
-    font-size: 26px;
   }
 }
 
