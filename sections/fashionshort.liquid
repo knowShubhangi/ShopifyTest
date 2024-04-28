@@ -6,7 +6,7 @@
     <header class="header">
       <div class="announcement">
         <div class="details-1 container-xs">
-          <p class="offer ui text size-xs">
+          <p class="offer ui text ">
             <span class="offer-span">
               {{ 'sections.fashionshort.offerspan' | t }}</span>
             <span class="offer-span-1">
@@ -33,49 +33,49 @@
           <ul class="rowhome">
             <li>
               <a href="#">
-                <p class="home ui heading size-xs">
+                <p class="home ui text ">
                   {{ section.settings.home }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.shop }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.women }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.men }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.accessories }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.aboutus }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.contactus }}</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <p class="shop ui heading size-xs">
+              <a href="#" class="shop-link">
+                <p class="shop ui text ">
                   {{ section.settings.blog }}</p>
               </a>
             </li>
@@ -104,7 +104,7 @@
           <span>
             {{ 'sections.fashionshort.msg_enjoy_50_off_in' | t }}</span>
         </button>
-        <h1 class="stepinto ui heading size-lg">
+        <h1 class="stepinto ui heading size-s">
           {{ section.settings.stepinto }}</h1>
         <p class="description ui text size-s">
           {{ section.settings.description }}</p>
@@ -121,48 +121,6 @@
         height="637"
         loading="lazy"
         class="closeupportra" />
-    </div>
-  </div>
-  <div class="columnfree container-xs">
-    <div class="partners">
-      {%- for block in section.blocks -%}
-        <div {{ block.shopify_attributes }} class="freeshipping">
-          {% if block.settings.free_shipping == blank %}
-            {% render 'img_thumbs_up', class: "free_shipping" %}
-          {% else %}
-            <img
-              src="{{block.settings.free_shipping | image_url}}"
-              alt="free_shipping"
-              width="54"
-              height="54"
-              loading="lazy"
-              class="free_shipping" />
-          {% endif %}
-          <div class="columnfreeshipp">
-            <h2 class="freeshipping-1 ui heading size-s">
-              {{ block.settings.freeshipping }}</h2>
-            <p class="price ui text size-xs">
-              {{ block.settings.price }}</p>
-          </div>
-        </div>
-
-      {%- endfor -%}
-    </div>
-    <div class="listwomen_one">
-      {%- for block in section.blocks -%}
-        <div {{ block.shopify_attributes }} class="stackwomen_one">
-          <img
-            src="{% if block.settings.women_one == blank %} {{ 'img_rectangle_145.png' | file_url }} {% else %}{{ block.settings.women_one | image_url}}{% endif %}"
-            alt="women"
-            width="369"
-            height="485"
-            loading="lazy"
-            class="women_one" />
-          <h2 class="women_two ui heading size-md">
-            {{ block.settings.women_two }}</h2>
-        </div>
-
-      {%- endfor -%}
     </div>
   </div>
 </div>
@@ -250,70 +208,10 @@
         "default": "Blog"
       }
     ],
-    "blocks": [
-      {
-        "type": "column",
-        "name": "t:sections.fashionshort.blocks.column.name",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "free_shipping",
-            "label": "t:sections.fashionshort.blocks.column.settings.free_shipping"
-          },
-          {
-            "type": "text",
-            "id": "freeshipping",
-            "label": "t:sections.fashionshort.blocks.column.settings.freeshipping",
-            "default": "Free Shipping"
-          },
-          {
-            "type": "text",
-            "id": "price",
-            "label": "t:sections.fashionshort.blocks.column.settings.price",
-            "default": "Free Shipping for order above $180"
-          },
-          {
-            "type": "image_picker",
-            "id": "women_one",
-            "label": "t:sections.fashionshort.blocks.column.settings.women_one"
-          },
-          {
-            "type": "text",
-            "id": "women_two",
-            "label": "t:sections.fashionshort.blocks.column.settings.women_two",
-            "default": "WOMEN"
-          }
-        ]
-      },
-      {
-        "type": "column",
-        "name": "t:sections.fashionshort.blocks.column.name",
-        "settings": []
-      }
-    ],
     "presets": [
       {
         "name": "t:sections.fashionshort.presets.name",
-        "blocks": [
-          {
-            "type": "column"
-          },
-          {
-            "type": "column"
-          },
-          {
-            "type": "column"
-          },
-          {
-            "type": "column"
-          },
-          {
-            "type": "column"
-          },
-          {
-            "type": "column"
-          }
-        ]
+        "blocks": []
       }
     ]
   }
