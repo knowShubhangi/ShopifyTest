@@ -5,6 +5,11 @@
       "settings": {
       }
     },
+    "details": {
+      "type": "details",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -74,6 +79,7 @@
     }
   },
   "order": [
+    "details",
     "fashionshort",
     "image_banner",
     "featured_collection"
