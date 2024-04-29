@@ -1,0 +1,127 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kids_one {
+  color: #747676 !important;
+  font-size: 30px;
+  font-weight: 500;
+  @media only screen and (max-width: 1050px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
+}
+
+.bestsellers {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 550px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.bestsellers-1 {
+  gap: 48px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1360px;
+  margin: 30px auto 40px auto;
+  @media only screen and (max-width: 1050px) {
+    padding: 20px;
+  }
+}
+
+.title {
+  gap: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.bestsellers-2 {
+  color: #0f0f0f !important;
+  font-size: 65px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 48px;
+  }
+}
+
+.tabtab1 {
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adults_one {
+  color: #0f0f0f !important;
+  font-size: 30px;
+  font-weight: 600;
+  @media only screen and (max-width: 1050px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
+}
+
+.productlist {
+  gap: 24px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.userprofile2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  height: 461px;
+  object-fit: cover;
+}
+
+.columndryrobead {
+  gap: 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+}
+
+.dryrobeadvance {
+  color: #0f0f0f !important;
+  font-size: 24px;
+  font-weight: 500;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
+
+.rowprice {
+  display: flex;
+}
+
+.price {
+  color: #0f0f0f !important;
+  font-size: 24px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
