@@ -263,9 +263,6 @@
     }
   },
   "sections": {
-    "details": {
-      "shop_now": "SHOP NOW"
-    },
     "announcements": {
       "previous_announcement": "Previous announcement",
       "next_announcement": "Next announcement",
