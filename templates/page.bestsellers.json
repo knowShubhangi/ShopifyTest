@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "bestsellers": {
+      "type": "bestsellers",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "dryrobeadvance": "dryrobe Advance Long Sleeve",
+            "price": "₹17,800"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "dryrobeadvance": "dryrobe Advance Long Sleeve",
+            "price": "₹17,800"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "dryrobeadvance": "dryrobe Advance Long Sleeve",
+            "price": "₹17,800"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "bestsellers"
+  ]
+}
