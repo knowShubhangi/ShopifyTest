@@ -371,6 +371,28 @@
     }
   },
   "sections": {
+    "bestsellers": {
+      "name": "Bestsellers",
+      "presets": {
+        "name": "Bestsellers"
+      },
+      "blocks": {
+        "column": {
+          "name": "productlist",
+          "settings": {
+            "image": "image",
+            "dryrobeadvance": "dryrobeadvance",
+            "price": "price"
+          }
+        }
+      },
+      "settings": {
+        "bestsellers": "bestsellers",
+        "adults_one": "adults_one",
+        "kids_one": "kids_one",
+        "accessories_one": "accessories_one"
+      }
+    },
     "details": {
       "name": "Details",
       "presets": {
