@@ -1,0 +1,64 @@
+.flex-col-center-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row-center-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  gap: 25px;
+  width: 100%;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  @media only screen and (max-width: 1050px) {
+    padding: 20px;
+  }
+}
+
+.abouttrendify {
+  color: #0f0f0f !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bycreatinga {
+  color: #0f0f0f !important;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 500;
+  width: 76%;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    font-size: 47px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 41px;
+  }
+}
+
+.shop_now {
+  color: #fdfdfd;
+  padding-left: 31px;
+  padding-right: 31px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0f0f0f;
+  height: 50px;
+  min-width: 146px;
+  border-radius: 6px;
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
