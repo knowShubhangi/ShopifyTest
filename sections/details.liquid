@@ -1,0 +1,39 @@
+{{ 'details.css' | asset_url | stylesheet_tag }}
+
+
+<div class="flex-col-center-center details">
+  <p class="abouttrendify ui text size-s">
+    {{ section.settings.abouttrendify }}</p>
+  <p class="bycreatinga ui text size-xl">
+    {{ section.settings.bycreatinga }}</p>
+  <button class="flex-row-center-center shop_now">
+    {{ 'sections.details.shop_now' | t }}</button>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.details.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "abouttrendify",
+        "label": "t:sections.details.settings.abouttrendify",
+        "default": "ABOUT TRENDIFY®"
+      },
+      {
+        "type": "text",
+        "id": "bycreatinga",
+        "label": "t:sections.details.settings.bycreatinga",
+        "default": "By creating a product that didn’t exist before, we made the outdoors more accessible, warm and fun."
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.details.presets.name",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}
