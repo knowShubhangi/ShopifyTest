@@ -32,6 +32,7 @@
         "column2",
         "column3"
       ],
+      "disabled": true,
       "settings": {
         "bestsellers": "BEST SELLERS",
         "adults_one": "Adults",
@@ -41,6 +42,7 @@
     },
     "details": {
       "type": "details",
+      "disabled": true,
       "settings": {
         "abouttrendify": "ABOUT TRENDIFY®",
         "bycreatinga": "By creating a product that didn’t exist before, we made the outdoors more accessible, warm and fun."
@@ -48,6 +50,7 @@
     },
     "fashionshort": {
       "type": "fashionshort",
+      "disabled": true,
       "settings": {
         "stepinto": "Step into Fashion at Your <br>Ultimate Style Destination!",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy",
