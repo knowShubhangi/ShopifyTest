@@ -1,5 +1,44 @@
 {
   "sections": {
+    "newsblog": {
+      "type": "newsblog",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "july232023": "July 23, 2023",
+            "brandname": "BRANDNAME",
+            "followuson": "Follow Us On Instagram",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "july232023": "July 23, 2023",
+            "brandname": "BRANDNAME",
+            "followuson": "Follow Us On Instagram",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "july232023": "July 23, 2023",
+            "brandname": "BRANDNAME",
+            "followuson": "Follow Us On Instagram",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+      }
+    },
     "dealsofthr": {
       "type": "dealsofthr",
       "blocks": {
@@ -145,6 +184,7 @@
     }
   },
   "order": [
+    "newsblog",
     "dealsofthr",
     "limitedtime",
     "bestsellers",
