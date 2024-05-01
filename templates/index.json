@@ -1,10 +1,5 @@
 {
   "sections": {
-    "limitedtime": {
-      "type": "limitedtime",
-      "settings": {
-      }
-    },
     "bestsellers": {
       "type": "bestsellers",
       "blocks": {
@@ -112,7 +107,6 @@
     }
   },
   "order": [
-    "limitedtime",
     "bestsellers",
     "details",
     "image_banner",
