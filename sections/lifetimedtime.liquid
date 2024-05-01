@@ -1,0 +1,66 @@
+{{ 'limitedtime.css' | asset_url | stylesheet_tag }}
+
+
+<div class="limitedtime">
+  <div class="limitedtime-1">
+    <img
+      src="{% if section.settings.youngwomenpos == blank %} {{ 'img_young_women_pos.png' | file_url }} {% else %}{{ section.settings.youngwomenpos | image_url}}{% endif %}"
+      alt="youngwomenpos"
+      width="545"
+      height="487"
+      loading="lazy"
+      class="youngwomenpos" />
+    <div class="details">
+      <h1 class="limitedtime-2 ui heading size-lg">
+        {{ section.settings.limitedtime }}</h1>
+      <h2 class="offer ui heading size-3xl">
+        {{ section.settings.offer }}</h2>
+      <p class="description ui text size-s">
+        {{ section.settings.description }}</p>
+      <button class="flex-row-center-center shop_now">
+        <span>
+          {{ 'sections.limitedtime.lbl_shop_now' | t }}</span>
+        {% render 'img_frame', class: "frame" %}
+      </button>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.limitedtime.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "youngwomenpos",
+        "label": "t:sections.limitedtime.settings.youngwomenpos"
+      },
+      {
+        "type": "text",
+        "id": "limitedtime",
+        "label": "t:sections.limitedtime.settings.limitedtime",
+        "default": "Limited Time Offers"
+      },
+      {
+        "type": "text",
+        "id": "offer",
+        "label": "t:sections.limitedtime.settings.offer",
+        "default": "Get 50% Off All Fashion - Limited Time Offer!"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "t:sections.limitedtime.settings.description",
+        "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.limitedtime.presets.name",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}
