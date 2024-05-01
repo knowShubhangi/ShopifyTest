@@ -371,6 +371,31 @@
     }
   },
   "sections": {
+    "dealsofthr": {
+      "name": "Dealsofthr",
+      "presets": {
+        "name": "Dealsofthr"
+      },
+      "blocks": {
+        "column": {
+          "name": "productlist",
+          "settings": {
+            "womens_denim": "womens_denim",
+            "womensdenim": "womensdenim",
+            "price": "price",
+            "rscounter": "rsCounter",
+            "rscounter1": "rsCounter",
+            "offer": "offer",
+            "fortyfour": "FortyFour",
+            "image": "image"
+          }
+        }
+      },
+      "settings": {
+        "todaydeals": "todaydeals",
+        "dealsofthe": "dealsofthe"
+      }
+    },
     "limitedtime": {
       "name": "Limitedtime",
       "presets": {
