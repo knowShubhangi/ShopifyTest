@@ -1,43 +1,5 @@
 {
   "sections": {
-    "bestsellers": {
-      "type": "bestsellers",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "dryrobeadvance": "dryrobe Advance Long Sleeve",
-            "price": "₹17,800"
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "dryrobeadvance": "dryrobe Advance Long Sleeve",
-            "price": "₹17,800"
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "dryrobeadvance": "dryrobe Advance Long Sleeve",
-            "price": "₹17,800"
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-      }
-    },
-    "details": {
-      "type": "details",
-      "settings": {
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -104,12 +66,56 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "bestsellers": {
+      "type": "bestsellers",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "dryrobeadvance": "dryrobe Advance Long Sleeve",
+            "price": "₹17,800"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "dryrobeadvance": "dryrobe Advance Long Sleeve",
+            "price": "₹17,800"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "dryrobeadvance": "dryrobe Advance Long Sleeve",
+            "price": "₹17,800"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "bestsellers": "BEST SELLERS",
+        "adults_one": "Adults",
+        "kids_one": "Kids",
+        "accessories_one": "Accessories"
+      }
+    },
+    "details": {
+      "type": "details",
+      "settings": {
+        "abouttrendify": "ABOUT TRENDIFY®",
+        "bycreatinga": "By creating a product that didn’t exist before, we made the outdoors more accessible, warm and fun."
+      }
     }
   },
   "order": [
-    "bestsellers",
-    "details",
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "bestsellers",
+    "details"
   ]
 }
