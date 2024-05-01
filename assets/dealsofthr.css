@@ -1,0 +1,140 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dealsofthr {
+  gap: 47px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1204px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 1050px) {
+    padding: 20px;
+  }
+}
+
+.title {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.todaydeals {
+  color: #505050 !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dealsofthe {
+  color: #1b2834 !important;
+  font-size: 30px;
+  font-weight: 600;
+  @media only screen and (max-width: 1050px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
+}
+
+.productlist {
+  gap: 48px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.productcard1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  border: 1px solid #e7e7e7;
+}
+
+.womens_denim {
+  height: 350px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  object-fit: cover;
+}
+
+.columnwomensden {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 15px;
+}
+
+.womensdenim {
+  color: #1b2834 !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rowprice {
+  gap: 9px;
+  display: flex;
+}
+
+.price {
+  color: #848484 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.row {
+  gap: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.fortyfour {
+  color: #848484 !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.image {
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+}
+
+.rowrscounter {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rscounter {
+  color: #1b2834 !important;
+  font-size: 24px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
+
+.rscounter-1 {
+  color: #848484 !important;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.offer {
+  color: #0a8100 !important;
+  font-size: 18px;
+  font-weight: 700;
+  align-self: end;
+}
