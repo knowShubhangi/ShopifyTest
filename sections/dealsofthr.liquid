@@ -1,0 +1,144 @@
+{{ 'dealsofthr.css' | asset_url | stylesheet_tag }}
+
+
+<div class="dealsofthr">
+  <div class="title">
+    <h1 class="todaydeals ui heading size-md">
+      {{ section.settings.todaydeals }}</h1>
+    <h2 class="dealsofthe ui heading size-2xl">
+      {{ section.settings.dealsofthe }}</h2>
+  </div>
+  <div class="productlist">
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }} class="productcard1">
+        <img
+          src="{% if block.settings.womens_denim == blank %} {{ 'img_rectangle_142.png' | file_url }} {% else %}{{ block.settings.womens_denim | image_url}}{% endif %}"
+          alt="womens_denim"
+          width="369"
+          height="350"
+          loading="lazy"
+          class="womens_denim" />
+        <div class="columnwomensden">
+          <p class="womensdenim ui text size-s">
+            {{ block.settings.womensdenim }}</p>
+          <div class="rowprice">
+            <p class="price ui text size-xs">
+              {{ block.settings.price }}</p>
+            <div class="row">
+              <p class="fortyfour ui text size-xs">
+                {{ block.settings.fortyfour }}</p>
+              <img
+                src="{% if block.settings.image == blank %} {{ 'img_signal.png' | file_url }} {% else %}{{ block.settings.image | image_url}}{% endif %}"
+                alt="image"
+                width="16"
+                height="16"
+                loading="lazy"
+                class="image" />
+            </div>
+          </div>
+          <div class="rowrscounter">
+            <h2 class="rscounter ui heading size-xl">
+              {{ block.settings.rscounter }}</h2>
+            <p class="rscounter-1 ui text size-s">
+              {{ block.settings.rscounter1 }}</p>
+            <h3 class="offer ui heading size-md">
+              {{ block.settings.offer }}</h3>
+          </div>
+        </div>
+      </div>
+
+    {%- endfor -%}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.dealsofthr.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "todaydeals",
+        "label": "t:sections.dealsofthr.settings.todaydeals",
+        "default": "Today Deals"
+      },
+      {
+        "type": "text",
+        "id": "dealsofthe",
+        "label": "t:sections.dealsofthr.settings.dealsofthe",
+        "default": "Deals of the Day"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.dealsofthr.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "womens_denim",
+            "label": "t:sections.dealsofthr.blocks.column.settings.womens_denim"
+          },
+          {
+            "type": "text",
+            "id": "womensdenim",
+            "label": "t:sections.dealsofthr.blocks.column.settings.womensdenim",
+            "default": "Womens Denim Jacket"
+          },
+          {
+            "type": "text",
+            "id": "price",
+            "label": "t:sections.dealsofthr.blocks.column.settings.price",
+            "default": "ZARA"
+          },
+          {
+            "type": "text",
+            "id": "rscounter",
+            "label": "t:sections.dealsofthr.blocks.column.settings.rscounter",
+            "default": "Rs. 700"
+          },
+          {
+            "type": "text",
+            "id": "rscounter1",
+            "label": "t:sections.dealsofthr.blocks.column.settings.rscounter1",
+            "default": "Rs. 1000"
+          },
+          {
+            "type": "text",
+            "id": "offer",
+            "label": "t:sections.dealsofthr.blocks.column.settings.offer",
+            "default": "(30% off)"
+          },
+          {
+            "type": "text",
+            "id": "fortyfour",
+            "label": "t:sections.dealsofthr.blocks.column.settings.fortyfour",
+            "default": "4.4"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.dealsofthr.blocks.column.settings.image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.dealsofthr.presets.name",
+        "blocks": [
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
