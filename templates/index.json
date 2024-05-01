@@ -6,28 +6,31 @@
         "column1": {
           "type": "column",
           "settings": {
+            "july_232023_one": "shopify:\/\/shop_images\/img_rectangle_142_306x381_bd03e439-65c6-4a97-98d1-da5b658322e2.png",
             "july232023": "July 23, 2023",
             "brandname": "BRANDNAME",
             "followuson": "Follow Us On Instagram",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
           }
         },
         "column2": {
           "type": "column",
           "settings": {
+            "july_232023_one": "shopify:\/\/shop_images\/img_rectangle_142_1.png",
             "july232023": "July 23, 2023",
             "brandname": "BRANDNAME",
             "followuson": "Follow Us On Instagram",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
           }
         },
         "column3": {
           "type": "column",
           "settings": {
+            "july_232023_one": "shopify:\/\/shop_images\/img_rectangle_142_2.png",
             "july232023": "July 23, 2023",
             "brandname": "BRANDNAME",
             "followuson": "Follow Us On Instagram",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
           }
         }
       },
@@ -37,6 +40,8 @@
         "column3"
       ],
       "settings": {
+        "newsblog": "News & Blog",
+        "ourlatestnews": "Our Latest News & Blogs"
       }
     },
     "dealsofthr": {
@@ -45,22 +50,34 @@
         "column1": {
           "type": "column",
           "settings": {
+            "womensdenim": "Womens Denim Jacket",
             "price": "ZARA",
-            "offer": "(30% off)"
+            "rscounter": "Rs. 700",
+            "rscounter1": "Rs. 1000",
+            "offer": "(30% off)",
+            "fortyfour": "4.4"
           }
         },
         "column2": {
           "type": "column",
           "settings": {
+            "womensdenim": "Womens Denim Jacket",
             "price": "ZARA",
-            "offer": "(30% off)"
+            "rscounter": "Rs. 700",
+            "rscounter1": "Rs. 1000",
+            "offer": "(30% off)",
+            "fortyfour": "4.4"
           }
         },
         "column3": {
           "type": "column",
           "settings": {
+            "womensdenim": "Womens Denim Jacket",
             "price": "ZARA",
-            "offer": "(30% off)"
+            "rscounter": "Rs. 700",
+            "rscounter1": "Rs. 1000",
+            "offer": "(30% off)",
+            "fortyfour": "4.4"
           }
         }
       },
@@ -70,11 +87,16 @@
         "column3"
       ],
       "settings": {
+        "todaydeals": "Today Deals",
+        "dealsofthe": "Deals of the Day"
       }
     },
     "limitedtime": {
       "type": "limitedtime",
       "settings": {
+        "limitedtime": "Limited Time Offers",
+        "offer": "Get 50% Off All Fashion - Limited Time Offer!",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
       }
     },
     "bestsellers": {
@@ -108,11 +130,17 @@
         "column3"
       ],
       "settings": {
+        "bestsellers": "BEST SELLERS",
+        "adults_one": "Adults",
+        "kids_one": "Kids",
+        "accessories_one": "Accessories"
       }
     },
     "details": {
       "type": "details",
       "settings": {
+        "abouttrendify": "ABOUT TRENDIFY®",
+        "bycreatinga": "By creating a product that didn’t exist before, we made the outdoors more accessible, warm and fun."
       }
     },
     "image_banner": {
