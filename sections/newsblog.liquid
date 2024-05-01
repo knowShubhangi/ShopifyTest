@@ -1,0 +1,115 @@
+{{ 'newsblog.css' | asset_url | stylesheet_tag }}
+
+
+<div class="newsblog">
+  <div class="flex-col-center-center title">
+    <h1 class="newsblog-1 ui heading size-md">
+      {{ section.settings.newsblog }}</h1>
+    <h2 class="ourlatestnews ui heading size-2xl">
+      {{ section.settings.ourlatestnews }}</h2>
+  </div>
+  <div class="bloglist">
+    {%- for block in section.blocks -%}
+      <div {{ block.shopify_attributes }} class="userprofile">
+        <img
+          src="{% if block.settings.july_232023_one == blank %} {{ 'img_rectangle_142_306x381.png' | file_url }} {% else %}{{ block.settings.july_232023_one | image_url}}{% endif %}"
+          alt="july_232023"
+          width="381"
+          height="306"
+          loading="lazy"
+          class="july_232023_one" />
+        <div class="columnjuly23202">
+          <div class="rowjuly232023">
+            <p class="july232023 ui text size-xs">
+              {{ block.settings.july232023 }}</p>
+            <div class="linefour_one"></div>
+            <p class="july232023 ui text size-xs">
+              {{ block.settings.brandname }}</p>
+          </div>
+          <div class="columnfollowuso">
+            <h2 class="followuson ui heading size-md">
+              {{ block.settings.followuson }}</h2>
+            <p class="description ui text size-s">
+              {{ block.settings.description }}</p>
+          </div>
+        </div>
+      </div>
+
+    {%- endfor -%}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.newsblog.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "newsblog",
+        "label": "t:sections.newsblog.settings.newsblog",
+        "default": "News & Blog"
+      },
+      {
+        "type": "text",
+        "id": "ourlatestnews",
+        "label": "t:sections.newsblog.settings.ourlatestnews",
+        "default": "Our Latest News & Blogs"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.newsblog.blocks.column.name",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "july_232023_one",
+            "label": "t:sections.newsblog.blocks.column.settings.july_232023_one"
+          },
+          {
+            "type": "text",
+            "id": "july232023",
+            "label": "t:sections.newsblog.blocks.column.settings.july232023",
+            "default": "July 23, 2023"
+          },
+          {
+            "type": "text",
+            "id": "brandname",
+            "label": "t:sections.newsblog.blocks.column.settings.brandname",
+            "default": "BRANDNAME"
+          },
+          {
+            "type": "text",
+            "id": "followuson",
+            "label": "t:sections.newsblog.blocks.column.settings.followuson",
+            "default": "Follow Us On Instagram"
+          },
+          {
+            "type": "text",
+            "id": "description",
+            "label": "t:sections.newsblog.blocks.column.settings.description",
+            "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.newsblog.presets.name",
+        "blocks": [
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          },
+          {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
