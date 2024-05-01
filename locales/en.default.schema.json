@@ -371,6 +371,18 @@
     }
   },
   "sections": {
+    "limitedtime": {
+      "name": "Limitedtime",
+      "presets": {
+        "name": "Limitedtime"
+      },
+      "settings": {
+        "youngwomenpos": "youngwomenpos",
+        "limitedtime": "limitedtime",
+        "offer": "offer",
+        "description": "description"
+      }
+    },
     "bestsellers": {
       "name": "Bestsellers",
       "presets": {
