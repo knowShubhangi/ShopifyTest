@@ -263,6 +263,9 @@
     }
   },
   "sections": {
+    "limitedtime": {
+      "lbl_shop_now": "Shop Now"
+    },
     "details": {
       "shop_now": "SHOP NOW"
     },
