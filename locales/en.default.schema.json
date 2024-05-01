@@ -371,6 +371,28 @@
     }
   },
   "sections": {
+    "newsblog": {
+      "name": "Newsblog",
+      "presets": {
+        "name": "Newsblog"
+      },
+      "blocks": {
+        "column": {
+          "name": "bloglist",
+          "settings": {
+            "july_232023_one": "july_232023_one",
+            "july232023": "july232023",
+            "brandname": "brandname",
+            "followuson": "followuson",
+            "description": "description"
+          }
+        }
+      },
+      "settings": {
+        "newsblog": "newsblog",
+        "ourlatestnews": "ourlatestnews"
+      }
+    },
     "dealsofthr": {
       "name": "Dealsofthr",
       "presets": {
