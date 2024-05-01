@@ -1,5 +1,10 @@
 {
   "sections": {
+    "limitedtime": {
+      "type": "limitedtime",
+      "settings": {
+      }
+    },
     "bestsellers": {
       "type": "bestsellers",
       "blocks": {
@@ -13,7 +18,6 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img_rectangle_147_461x437_771b4bbf-4e2d-4e0f-a89c-a26056bc2655.png",
             "dryrobeadvance": "dryrobe Advance Long Sleeve",
             "price": "₹17,800"
           }
@@ -21,7 +25,6 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img_rectangle_147_1.png",
             "dryrobeadvance": "dryrobe Advance Long Sleeve",
             "price": "₹17,800"
           }
@@ -32,37 +35,12 @@
         "column2",
         "column3"
       ],
-      "disabled": true,
       "settings": {
-        "bestsellers": "BEST SELLERS",
-        "adults_one": "Adults",
-        "kids_one": "Kids",
-        "accessories_one": "Accessories"
       }
     },
     "details": {
       "type": "details",
-      "disabled": true,
       "settings": {
-        "abouttrendify": "ABOUT TRENDIFY®",
-        "bycreatinga": "By creating a product that didn’t exist before, we made the outdoors more accessible, warm and fun."
-      }
-    },
-    "fashionshort": {
-      "type": "fashionshort",
-      "disabled": true,
-      "settings": {
-        "stepinto": "Step into Fashion at Your <br>Ultimate Style Destination!",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy",
-        "offer": "Sign up now and enjoy a 25% discount on your first order. Don&#39;t miss out! Sign up now",
-        "home": "Home",
-        "shop": "Shop",
-        "women": "Women",
-        "men": "Men",
-        "accessories": "Accessories",
-        "aboutus": "About Us",
-        "contactus": "Contact Us",
-        "blog": "Blog"
       }
     },
     "image_banner": {
@@ -134,9 +112,9 @@
     }
   },
   "order": [
+    "limitedtime",
     "bestsellers",
     "details",
-    "fashionshort",
     "image_banner",
     "featured_collection"
   ]
