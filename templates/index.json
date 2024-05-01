@@ -1,5 +1,38 @@
 {
   "sections": {
+    "dealsofthr": {
+      "type": "dealsofthr",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "price": "ZARA",
+            "offer": "(30% off)"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "price": "ZARA",
+            "offer": "(30% off)"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "price": "ZARA",
+            "offer": "(30% off)"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+      }
+    },
     "limitedtime": {
       "type": "limitedtime",
       "settings": {
@@ -112,6 +145,7 @@
     }
   },
   "order": [
+    "dealsofthr",
     "limitedtime",
     "bestsellers",
     "details",
