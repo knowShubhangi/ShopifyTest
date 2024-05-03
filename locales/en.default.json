@@ -263,6 +263,10 @@
     }
   },
   "sections": {
+    "herosection": {
+      "msg_enjoy_50_off_in": "Enjoy 50% OFF in Our Summer Super Sale!",
+      "lbl_shop_now": "Shop Now"
+    },
     "limitedtime": {
       "lbl_shop_now": "Shop Now"
     },
