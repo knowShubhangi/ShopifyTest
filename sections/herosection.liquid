@@ -1,0 +1,63 @@
+{{ 'herosection.css' | asset_url | stylesheet_tag }}
+
+
+<div class="herosection">
+  <div class="details">
+    <button class="flex-row-center-center enjoy_50off_in">
+      {% render 'img_icon_blue_gray_900', class: "icon" %}
+      <span>
+        {{ 'sections.herosection.msg_enjoy_50_off_in' | t }}</span>
+    </button>
+    <h1 class="stepinto ui heading size-4xl">
+      {{ section.settings.stepinto }}
+    </h1>
+    <p class="description ui text size-s">
+      {{ section.settings.description }}
+    </p>
+    <button class="flex-row-center-center shop_now">
+      <span>
+        {{ 'sections.herosection.lbl_shop_now' | t }}</span>
+      {% render 'img_frame', class: "frame" %}
+    </button>
+  </div>
+  <img
+    src="{% if section.settings.closeupportra == blank %} {{ 'img_close_up_portra.png' | file_url }} {% else %}{{ section.settings.closeupportra | image_url}}{% endif %}"
+    alt="closeupportra"
+    width="521"
+    height="637"
+    loading="lazy"
+    class="closeupportra" />
+</div>
+
+
+{% schema %}
+  {
+    "name": "t:sections.herosection.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "closeupportra",
+        "label": "t:sections.herosection.settings.closeupportra"
+      },
+      {
+        "type": "text",
+        "id": "stepinto",
+        "label": "t:sections.herosection.settings.stepinto",
+        "default": "Step into Fashion at Your <br />Ultimate Style Destination!"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "t:sections.herosection.settings.description",
+        "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.herosection.presets.name",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}
