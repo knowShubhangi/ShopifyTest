@@ -1,0 +1,107 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-row-center-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.herosection {
+  gap: 48px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.details {
+  gap: 24px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+    padding: 20px;
+  }
+}
+
+.enjoy_50off_in {
+  color: #1b2834;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  gap: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  height: 47px;
+  min-width: 531px;
+  border-radius: 23px;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+}
+
+.stepinto {
+  color: #1b2834 !important;
+  font-size: 52px;
+  font-weight: 700;
+  width: 100%;
+  line-height: 73px;
+  @media only screen and (max-width: 1050px) {
+    font-size: 44px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 38px;
+  }
+}
+
+.description {
+  color: #777c84 !important;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  line-height: 28px;
+}
+
+.shop_now {
+  color: #ffffff;
+  padding-left: 31px;
+  padding-right: 31px;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 10px;
+  background-color: #1b2834;
+  text-align: center;
+  height: 46px;
+  min-width: 176px;
+  border-radius: 6px;
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.frame {
+  width: 24px;
+  height: 24px;
+}
+
+.closeupportra {
+  height: 637px;
+  width: 41%;
+  object-fit: cover;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
