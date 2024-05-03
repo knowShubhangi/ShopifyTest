@@ -1,5 +1,10 @@
 {
   "sections": {
+    "herosection": {
+      "type": "herosection",
+      "settings": {
+      }
+    },
     "newsblog": {
       "type": "newsblog",
       "blocks": {
@@ -212,6 +217,7 @@
     }
   },
   "order": [
+    "herosection",
     "newsblog",
     "dealsofthr",
     "limitedtime",
