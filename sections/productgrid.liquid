@@ -1,0 +1,74 @@
+{{ 'productgrid.css' | asset_url | stylesheet_tag }}
+
+<div class="productgrid">
+  {% for product in section.settings.collection.products %}
+    <div class="productcard">
+      <div class="image">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: '369x461' }}" alt="{{ product.title }}" width="369" height="461" loading="lazy" class="image-1" />
+        </a>
+        {% render 'img_icon_gray_400', class: "icon_one" %}
+      </div>
+      <div class="columntrendytsh">
+        <p class="trendytshirt ui text size-2xl">{{ product.title }}</p>
+        <div class="rowrscounter">
+          <h1 class="rscounter ui heading size-xl">{{ product.price | money }}</h1>
+          <p class="rscounter-1 ui text size-2xl">{{ product.compare_at_price | money }}</p>
+        </div>
+        <button class="add-to-cart" data-product-id="{{ product.variants.first.id }}">Add to Cart</button>
+      </div>
+    </div>
+  {% else %}
+    <p>No products found.</p>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.productgrid.name",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.productgrid.presets.name"
+      }
+    ]
+  }
+{% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var productId = this.getAttribute('data-product-id');
+        var formData = {
+          'items': [{
+            'id': productId,
+            'quantity': 1
+          }]
+        };
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Product added to cart!');
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+      });
+    });
+  });
+</script>
