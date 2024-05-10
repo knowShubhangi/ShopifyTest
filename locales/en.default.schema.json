@@ -371,6 +371,12 @@
     }
   },
   "sections": {
+    "productgrid": {
+      "name": "ProductGrid",
+      "presets": {
+        "name": "ProductGrid"
+      }
+    },
     "herosection": {
       "name": "Herosection",
       "presets": {
