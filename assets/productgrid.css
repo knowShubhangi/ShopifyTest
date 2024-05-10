@@ -1,0 +1,91 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.productgrid {
+  width: 100%;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  max-width: 1204px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.productcard {
+  gap: 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.image {
+  height: 461px;
+  position: relative;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.image-1 {
+  height: 461px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.icon_one {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 12.33px;
+  top: 12px;
+  margin: auto;
+}
+
+.columntrendytsh {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.trendytshirt {
+  font-size: 24px;
+  font-weight: 400;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
+
+.rowrscounter {
+  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rscounter {
+  font-size: 24px;
+  font-weight: 700;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
+
+.rscounter-1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: line-through;
+  @media only screen and (max-width: 1050px) {
+    font-size: 22px;
+  }
+}
