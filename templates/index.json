@@ -1,5 +1,11 @@
 {
   "sections": {
+    "productgrid": {
+      "type": "productgrid",
+      "settings": {
+        "collection": "frontpage"
+      }
+    },
     "herosection": {
       "type": "herosection",
       "settings": {
@@ -217,6 +223,7 @@
     }
   },
   "order": [
+    "productgrid",
     "herosection",
     "newsblog",
     "dealsofthr",
