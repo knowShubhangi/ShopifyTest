@@ -3,12 +3,14 @@
     "productgrid": {
       "type": "productgrid",
       "settings": {
-        "collection": "frontpage"
+        "collection": "surfboards"
       }
     },
     "herosection": {
       "type": "herosection",
       "settings": {
+        "stepinto": "Step into Fashion at Your <br>Ultimate Style Destination!",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy"
       }
     },
     "newsblog": {
