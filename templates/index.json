@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "productgrid": {
@@ -222,6 +231,46 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "collection_list_wgHKKq": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9MrXqQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "surfboards"
+          }
+        },
+        "featured_collection_tMpBcW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_EgmCdD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_9MrXqQ",
+        "featured_collection_tMpBcW",
+        "featured_collection_EgmCdD"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -233,6 +282,7 @@
     "bestsellers",
     "details",
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "collection_list_wgHKKq"
   ]
 }
